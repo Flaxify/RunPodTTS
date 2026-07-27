@@ -1,5 +1,6 @@
 .env
 .runpod-index.json
+.runpodtts-demo-state
 .agents/
 .pytest_cache/
 __pycache__/

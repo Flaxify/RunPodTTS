@@ -5,6 +5,18 @@
 
 Launch an IndexTTS2 GPU Pod from WSL2, wait for it to become ready, and print the URL and API key that a local application can use.
 
+## Gum frontend prototype
+
+The new interactive launcher is being built in `start.sh`. Its current backend is deliberately fake: it lets us test the menus, price-sorted GPU choices, existing-Pod flow, lifecycle actions, and connection summary without creating or billing any Runpod resources.
+
+```bash
+./start.sh
+```
+
+If Gum is not already installed, the script downloads the pinned official Linux binary into the user's cache and verifies it against the release checksum. It does not use `sudo` or install a system package.
+
+The prototype stores its simulated current-Pod card in `.runpodtts-demo-state`. Run `./start.sh --reset-demo` to clear only that local demo state.
+
 The public address is provided by Runpod's HTTPS proxy:
 
 ```text
