@@ -1,0 +1,9 @@
+.git
+.github
+.env
+.runpod-index.json
+.pytest_cache
+.venv
+tests
+__pycache__
+*.pyc

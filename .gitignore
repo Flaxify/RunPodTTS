@@ -1,0 +1,9 @@
+.env
+.runpod-index.json
+.agents/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+.venv/
+dist/
+build/
